@@ -1,0 +1,9 @@
+services:
+ - name: revite-urls
+   plan: free
+   type: web
+   env: python
+   branch: main
+   envVars:
+    - key: JSON_URL
+      value: https://browser.jf6deu.net/json.php
