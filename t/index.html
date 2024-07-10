@@ -4,7 +4,8 @@
     var brlist = "{{brlist}}";
     brlist = brlist.replace("[", "").replace("]", "").split(",");
     for (var i=0;i <= brlist.length;i++){
-      document.body.innerHTML += brlist[i]+"<br>";
+      document.getElementsByClassName("1")[0].innerHTML += brlist[i]+"<br>";
     }
   </script>
+  <span class="1"></span>
 </html>
