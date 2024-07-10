@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html>
   <script>
-    var brlist = {{brlist}};
+    var brlist = "{{brlist}}";
+    brlist = brlist.replace("[", "").replace("]", "").split(",");
     for (var i=0;i <= brlist.length;i++){
       document.body.innerHTML += brlist[i]+"<br>";
     }
