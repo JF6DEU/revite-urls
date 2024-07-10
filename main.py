@@ -7,7 +7,7 @@ import requests
 import os
 
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
-template = Jinja2Templates(directory="templates").TemplateResponse
+template = Jinja2Templates(directory="t").TemplateResponse
 
 @app.get("/", response_class=HTMLResponse)
 async def ytview(request: Request):
