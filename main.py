@@ -13,7 +13,7 @@ template = Jinja2Templates(directory="templates").TemplateResponse
 async def ytview(request: Request):
     resp = requests.get(os.environ.get('JSON_URL'))
     vm = resp.json()
-    return template("main.html", {"request": request, "brlist":str(vm)});
+    return template("index.html", {"request": request, "brlist":str(vm)});
 
 if __name__ == '__main__':
     import uvicorn
